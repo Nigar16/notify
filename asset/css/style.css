@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --green: #2dcb71;
+            --open: 'Open Sans', sans-serif;
+            --rale:'Raleway', sans-serif;
+        }
+        
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+    
+        .mtb-30{
+            margin: 30px auto;
+        }
+
+        .container{
+            max-width: 1180px;
+            margin: auto;
+        }
+        
+        .greenLine {
+            background-color: var(--green);
+            height: 10px;
+        }
+        
+        header {
+            background-image: url("../img/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        header p {
+            max-width: 469px;
+            font: 500 24px var(--open);
+            line-height: 36px;
+            color: #ffffff;
+        }
+        
+        .social a{
+            display: inline-block;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: #000;
+            opacity: .4;
+            position: relative;
+            margin-right: 15px;
+            margin-top: 25px;
+        }
+        
+        .social i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 22px;
+            color: #fff;
+        }
+        
+        .social a:hover{
+            background-color: var(--green);
+            opacity: 1;
+        }
+        
+        header .container {
+             padding-left: 115px; 
+        }
+        
+        header {
+            padding: 170px 0;
+        }
+        
+        /* section1 starts here */
+        #section1 .container {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin: 60px auto;
+        }
+      
+        #section1 h2 , #section2 h1 {
+            font: 600 22px var(--rale);
+            line-height: 18px;
+            color: #222222;
+        }
+
+        #section1 p , #section2 p {
+            font:500 16px var(--open);
+            max-width: 358px;
+            line-height: 26px;
+            color: #848484;
+        }
+
+
+        /* section2 starts here */
+
+
+        #section2 {
+            background-color: #e3e3e3;
+        }
+
+        #section2 .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        #section2 .container div {
+            margin: 60px auto;
+        }
+
+        #section2 p{
+            max-width: 541px;
+         }
+
+         #section2 video{
+            width: 500px;
+            height: 310px;
+            border-radius: 10px;
+         }
+        
+         #section2 form{
+             display: flex;
+             margin:30px 0;
+             max-width:440px;
+         }
+
+         #section2 input{
+            width:70%;
+            height: 56px;
+            background-color: #ffffff;
+            border: 1px solid  #848484;
+            outline: none;
+            border-radius: 15px 0 0 15px;
+            border-right: 0;
+            padding-left: 25px;
+            font: 400 18px var(--open);
+            line-height: 18px;
+            color: #848484;    
+            }
+        
+        #section2 button{
+            cursor: pointer;
+            width:30%;
+            height: 56px;
+            border-radius: 0 15px 15px 0; 
+            border-left: 0;
+            background-color: #2ecc71;
+            outline: none;
+            border: 1px solid  #848484;
+            font:700 22px var(--rale);
+            color: #fff;
+        }
+
+         /* footer starts here */
+
+        footer .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin:60px auto;
+        }
+
+         footer #first p{
+            font:italic normal 18px var(--open);
+            max-width: 820px;
+            line-height: 30px;
+            color: #848484;
+         }
+
+         footer h6{
+            font: 700 18px var(--rale);
+            line-height: 20px;
+            color: #2e2e2e;
+         }
+
+         footer p{
+             font: normal 16px var(--open);
+             line-height: 26px;
+             color: #848484;
+         }
+         footer h3{
+             font: 600 24px var(--rale);
+             margin:60px auto 30px auto;
+         }
+
+        img:hover{
+                opacity: 0.5;
+                background-color: green;
+                cursor: pointer;
+        }
+        footer .social a{
+            width: 34px;
+            height:34px;
+        }
+         footer .social a:hover {
+            opacity: 0.6;
+        }
+         nav{
+             background-color: #e3e3e3;
+         }
+
+         nav div{
+             max-width: 520px;
+             margin:auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+
+         nav a{
+            margin: 55px auto;
+            text-decoration: none;
+            font:400 16px var(--open);
+            letter-spacing: 0px;
+            color: #848484;
+            padding-left:20px;
+         }
+      
+         
+        @media only screen and (max-width:768px) {
+            header .container {
+                padding-left: 0 !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #section1 .container , #section2 .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            #section1 .container div {
+               margin-top: 20px;
+            }
+
+            /* section2 */
+
+             #section2 video{
+                width: 300px;
+                height: 200px;
+             }
+
+             footer .container{
+                 flex-wrap: wrap;
+             }
+             nav div{
+                 flex-direction: column;
+                 align-items: center;
+             }
+        }
